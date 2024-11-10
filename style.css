@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+body{
+    background-color: #171717;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+.container{
+    width: 350px;
+    height: max-content;
+    background-color: rgb(44, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.4);
+}
+.info{
+    text-align: center;
+    padding-top: 20px;
+}
+.info p{
+    line-height: 1.5em;
+}
+.name{
+    color: #f5f5f5;
+    margin-top: 15px;
+    font: 600 24px sans-serif;
+}
+.adresse{
+    color: greenyellow;
+    font: 600 14px sans-serif;
+}
+
+.social-links{
+    color: #f5f5f5;
+    margin-top: 20px;
+}
+.social-links ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.social-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.social-link{
+    width: 100%;
+    background-color:  rgba(29, 28, 28, 0.9);
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+.social-link a{
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: 600;
+}
+
+.social-link:hover , .social-link:hover a{
+    background-color: greenyellow;
+    color: #171717;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 370px){
+    .container{
+        width: 290px;
+    }
+    .name{
+        font-size: 20px;
+    }
+    .adresse{
+        font-size: 12px;
+    }
+    .social-links p{
+        font-size: 12px;
+    }
+
+}
